@@ -1,0 +1,3 @@
+[submodule "speedscope"]
+	path = speedscope
+	url = git@github.com:jlfwong/speedscope.git
