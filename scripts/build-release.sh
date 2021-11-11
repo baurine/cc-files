@@ -5,7 +5,9 @@
 
 set -euxo pipefail
 
-cd speedscope
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+PROJECT_DIR="$(dirname "$DIR")"
+cd ${PROJECT_DIR}/speedscope
 
 OUTDIR=`pwd`/dist/release
 

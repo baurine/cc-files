@@ -17,8 +17,9 @@ func main() {
 	var fs http.FileSystem = http.Dir("speedscope/dist/release")
 	err := vfsgen.Generate(fs, vfsgen.Options{
 		BuildTags:    buildTag,
-		PackageName:  "ssuiserver",
-		VariableName: "SpeedscopeAssets",
+		PackageName:  "speedscopeFiles",
+		VariableName: "speedscopeAssets",
+		Filename:     "ss_assets_vfsdata.go",
 	})
 	if err != nil {
 		log.Fatalln(err)

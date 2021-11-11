@@ -1,6 +1,9 @@
-.PHONY: build
+.PHONY: all prepare_ss gen
 
-build:
-	cd speedscope && npm install
-	./scripts/build-release.sh
+all: prepare_ss gen
+
+prepare_ss:
+	./scripts/prepare-ss.sh
+
+gen:
 	go run cmd/main.go
