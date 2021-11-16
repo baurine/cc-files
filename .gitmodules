@@ -1,3 +1,4 @@
 [submodule "speedscope"]
 	path = speedscope
-	url = git@github.com:jlfwong/speedscope.git
+	url = git@github.com:YiniXu9506/speedscope.git
+	branch = newSpeedscope
