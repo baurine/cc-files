@@ -9,6 +9,10 @@ cd ${PROJECT_DIR}
 
 mkdir -p cc
 
+rm -rf cc
+
+mkdir -p cc
+
 # copy cc assets
 cp -r ${PROJECT_DIR}/../clinic-service-ui/packages/clinic-web/dist ${PROJECT_DIR}/cc
 
