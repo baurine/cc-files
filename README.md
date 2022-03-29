@@ -1,14 +1,14 @@
-# Speedscope Files
+# CC Files
 
 ## How to use
 
 ```go
 import (
-	speedscopeFiles "github.com/baurine/speedscope-files"
+	ccFiles "github.com/baurine/cc-files"
 )
 
 router := gin.Default()
-endpoint.StaticFS("/speedscope", speedscopeFiles.Assets())
+endpoint.StaticFS("/clinic", ccFiles.Assets())
 ```
 
 ## How to gen assets

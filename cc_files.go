@@ -1,7 +1,7 @@
-package speedscopeFiles
+package ccFiles
 
 import "net/http"
 
 func Assets() http.FileSystem {
-	return speedscopeAssets
+	return ccAssets
 }

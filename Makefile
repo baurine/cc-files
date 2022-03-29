@@ -1,9 +1,9 @@
-.PHONY: all prepare_ss gen
+.PHONY: all prepare gen
 
-all: prepare_ss gen
+all: prepare gen
 
-prepare_ss:
-	./scripts/prepare-ss.sh
+prepare:
+	./scripts/prepare.sh
 
 gen:
 	go run cmd/main.go

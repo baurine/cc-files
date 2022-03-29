@@ -1,4 +1,4 @@
-module github.com/baurine/speedscope-files
+module github.com/baurine/cc-files
 
 go 1.16
 

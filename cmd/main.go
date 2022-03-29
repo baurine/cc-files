@@ -14,12 +14,12 @@ func main() {
 		buildTag = os.Args[1]
 	}
 
-	var fs http.FileSystem = http.Dir("speedscope/dist/release")
+	var fs http.FileSystem = http.Dir("cc/dist")
 	err := vfsgen.Generate(fs, vfsgen.Options{
 		BuildTags:    buildTag,
-		PackageName:  "speedscopeFiles",
-		VariableName: "speedscopeAssets",
-		Filename:     "ss_assets_vfsdata.go",
+		PackageName:  "ccFiles",
+		VariableName: "ccAssets",
+		Filename:     "cc_assets_vfsdata.go",
 	})
 	if err != nil {
 		log.Fatalln(err)
